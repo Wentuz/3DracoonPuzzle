@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://t6n540cjl20p"]
+
+[ext_resource type="Script" path="res://never_ending_void.gd" id="1_mb157"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oi1pb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0u12"]
+albedo_color = Color(0.054902, 0.0352941, 0.00392157, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ys26p"]
+
+[node name="NeverEndingVoid" type="Area3D"]
+transform = Transform3D(4.38612, 0, 0, 0, 0.16126, 0, 0, 0, 4.54626, 0, 0, 0)
+script = ExtResource("1_mb157")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_oi1pb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+material_override = SubResource("StandardMaterial3D_w0u12")
+mesh = SubResource("BoxMesh_ys26p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

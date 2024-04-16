@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://3x7ax4mvkyfd"]
+[gd_scene load_steps=7 format=3 uid="uid://3x7ax4mvkyfd"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_jdnvq"]
+[ext_resource type="Script" path="res://Camera.gd" id="2_g07fm"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_eb1hn"]
 
@@ -34,6 +35,7 @@ shape = SubResource("CapsuleShape3D_cimhw")
 transform = Transform3D(1, 0, 0, 0, 1, 0.000366524, 0, -0.000366524, 1, 0, 7.87821, 0)
 spring_length = 9.0
 margin = 0.2
+script = ExtResource("2_g07fm")
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
 transform = Transform3D(1, 0, 0, 0, 0.817125, 0.576461, 0, -0.576461, 0.817125, 0, 0, -1.19209e-07)
