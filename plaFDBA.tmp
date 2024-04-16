@@ -38,6 +38,5 @@ margin = 0.2
 script = ExtResource("2_g07fm")
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
-unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.817125, 0.576461, 0, -0.576461, 0.817125, 0, 0, -1.19209e-07)
 current = true

@@ -1,12 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfo18f7sfpya1"]
+[gd_scene load_steps=5 format=3 uid="uid://cfo18f7sfpya1"]
 
 [ext_resource type="Script" path="res://ball.gd" id="1_0kdse"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m7vl0"]
+bounce = 5.55
 
 [sub_resource type="SphereMesh" id="SphereMesh_yl0ld"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_syhxu"]
 
 [node name="Ball" type="RigidBody3D"]
+disable_mode = 2
+mass = 130.95
+physics_material_override = SubResource("PhysicsMaterial_m7vl0")
 script = ExtResource("1_0kdse")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
