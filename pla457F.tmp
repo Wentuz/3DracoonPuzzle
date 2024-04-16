@@ -16,9 +16,6 @@ albedo_color = Color(0.8, 0.152941, 0.305882, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09211, 0)
 floor_stop_on_slope = false
 script = ExtResource("1_jdnvq")
-speed = null
-jump_strength = null
-fall_acceleration = null
 
 [node name="Pivot" type="Node3D" parent="."]
 

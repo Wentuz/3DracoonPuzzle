@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://ball.gd" id="1_0kdse"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m7vl0"]
-bounce = 5.55
+bounce = 1.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_yl0ld"]
 
@@ -11,8 +11,8 @@ bounce = 5.55
 
 [node name="Ball" type="RigidBody3D"]
 disable_mode = 2
-mass = 130.95
 physics_material_override = SubResource("PhysicsMaterial_m7vl0")
+gravity_scale = 2.0
 script = ExtResource("1_0kdse")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

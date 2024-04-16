@@ -4,7 +4,10 @@ extends CharacterBody3D
 @export var jump_strength = 20.0
 @export var fall_acceleration = 75.0
 
+var camera_position = null
+
 var target_velocity = Vector3.ZERO
+
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO

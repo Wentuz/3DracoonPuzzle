@@ -37,6 +37,9 @@ transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -14.4598, 
 
 [node name="Player" parent="." instance=ExtResource("1_5mpl8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 11, 6)
+speed = null
+jump_strength = null
+fall_acceleration = null
 
 [node name="Ball" parent="." instance=ExtResource("3_fv3fo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, 2)
