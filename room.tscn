@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy5k3c3jei2e5"]
+
+[ext_resource type="PackedScene" uid="uid://3x7ax4mvkyfd" path="res://player.tscn" id="1_5mpl8"]
+[ext_resource type="PackedScene" uid="uid://cg513idyl6gd3" path="res://ground.tscn" id="2_rkgui"]
+[ext_resource type="PackedScene" uid="uid://cfo18f7sfpya1" path="res://ball.tscn" id="3_fv3fo"]
+
+[node name="Room" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.802459, 0.461275, -0.378531, -0.000673866, 0.635065, 0.772458, 0.596707, -0.619611, 0.509925, -23.2742, 18.3311, 15.206)
+
+[node name="Ground" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(50.3835, 0, 0, 0, 0.323783, 0, 0, 0, 36.8721, 0.512292, -0.314582, 0.797885)
+
+[node name="Ground3" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(9.35326, 0, 0, 0, 7.05004, 0, 0, 0, 15.2976, 16.4434, 3.41137, -8.06525)
+
+[node name="Ground2" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(3.09047, 0, 0, 0, 6.21062, 0, 0, 0, 3.91121, 8.27374, 1.70707, -1.64221)
+
+[node name="Ground4" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(3.90179, 0, 0, 0, 3.16262, 0, 0, 0, 3.76641, 2.42827, 1.09946, -4.88978)
+
+[node name="Ground5" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -13, -0.010747, -10)
+
+[node name="Ground6" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -13.3952, 0.248141, -9.92524)
+
+[node name="Ground7" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -13.9956, 0.553685, -10.2681)
+
+[node name="Ground8" parent="." instance=ExtResource("2_rkgui")]
+transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -14.4598, 0.822951, -9.80275)
+
+[node name="Player" parent="." instance=ExtResource("1_5mpl8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 11, 6)
+
+[node name="Ball" parent="." instance=ExtResource("3_fv3fo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, 2)
