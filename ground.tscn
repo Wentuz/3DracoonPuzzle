@@ -14,6 +14,5 @@ shape = SubResource("BoxShape3D_vfyhn")
 
 [node name="TerrainGrassFlat" type="MeshInstance3D" parent="CollisionShape3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00342676, 0.333223, 0.000852614)
-visibility_parent = NodePath(".")
 mesh = ExtResource("1_ki8g0")
 skeleton = NodePath("../..")
