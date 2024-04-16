@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn8hqecrqurn0"
+path="res://.godot/imported/Prop_Bridge_Narrow.obj-53d0edc87f4d3ae738885f07d5b6bb84.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Bridge_Narrow.obj-53d0edc87f4d3ae738885f07d5b6bb84.mesh"]
+
+source_file="res://assets/Prop_Bridge_Narrow.obj"
+dest_files=["res://.godot/imported/Prop_Bridge_Narrow.obj-53d0edc87f4d3ae738885f07d5b6bb84.mesh", "res://.godot/imported/Prop_Bridge_Narrow.obj-53d0edc87f4d3ae738885f07d5b6bb84.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

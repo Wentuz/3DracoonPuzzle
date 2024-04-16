@@ -1,18 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg513idyl6gd3"]
+[gd_scene load_steps=3 format=3 uid="uid://cg513idyl6gd3"]
+
+[ext_resource type="ArrayMesh" uid="uid://cc5uqnd8ysjos" path="res://assets/Terrain_Grass_Flat.obj" id="1_ki8g0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vfyhn"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6w0m"]
-albedo_color = Color(0, 0.521569, 0.168627, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_w7dn1"]
+size = Vector3(1, 1, 0.999939)
 
 [node name="Ground" type="StaticBody3D"]
 transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, 0, 0, -0.239076)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0218286)
 shape = SubResource("BoxShape3D_vfyhn")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = SubResource("StandardMaterial3D_d6w0m")
-mesh = SubResource("BoxMesh_w7dn1")
+[node name="TerrainGrassFlat" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00342676, 0.333223, 0.000852614)
+visibility_parent = NodePath(".")
+mesh = ExtResource("1_ki8g0")
+skeleton = NodePath("../..")

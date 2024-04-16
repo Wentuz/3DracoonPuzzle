@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjaqipf1rvctw"
+path="res://.godot/imported/Prop_Daisy_Stem_3.obj-6b04a2290c1476426f209506e40b502d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Prop_Daisy_Stem_3.obj-6b04a2290c1476426f209506e40b502d.mesh"]
+
+source_file="res://assets/Prop_Daisy_Stem_3.obj"
+dest_files=["res://.godot/imported/Prop_Daisy_Stem_3.obj-6b04a2290c1476426f209506e40b502d.mesh", "res://.godot/imported/Prop_Daisy_Stem_3.obj-6b04a2290c1476426f209506e40b502d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

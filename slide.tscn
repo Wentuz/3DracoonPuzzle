@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5kv4pcajo2wu"]
+
+[ext_resource type="ArrayMesh" uid="uid://fgmgmuvovgpp" path="res://assets/Terrain_Path_Hill.obj" id="1_xfuvj"]
+
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_powh2"]
+
+[node name="Slide" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.997423, -0.0717412, 0, 0.0717412, 0.997423, 0.00156999, -0.0228846, -0.0498433)
+shape = SubResource("HeightMapShape3D_powh2")
+
+[node name="TerrainPathHill" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 0.997423, 0.0717412, 0, -0.0717412, 0.997423, 0.0311747, 0.0198189, -0.0434432)
+mesh = ExtResource("1_xfuvj")
+skeleton = NodePath("../..")
