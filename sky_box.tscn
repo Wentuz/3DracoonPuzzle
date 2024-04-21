@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://noost2qddcmc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_roxjl"]
+albedo_color = Color(0.179525, 0.325124, 0.999986, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_lwjun"]
+
+[node name="SkyBox" type="MeshInstance3D"]
+transform = Transform3D(515.959, 0, 0, 0, 55.6543, 0, 0, 0, 478.723, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_roxjl")
+mesh = SubResource("PlaneMesh_lwjun")

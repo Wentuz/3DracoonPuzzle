@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cy5k3c3jei2e5"]
+[gd_scene load_steps=6 format=3 uid="uid://cy5k3c3jei2e5"]
 
 [ext_resource type="PackedScene" uid="uid://3x7ax4mvkyfd" path="res://player.tscn" id="1_5mpl8"]
 [ext_resource type="PackedScene" uid="uid://cg513idyl6gd3" path="res://ground.tscn" id="2_rkgui"]
 [ext_resource type="PackedScene" uid="uid://cfo18f7sfpya1" path="res://ball.tscn" id="3_fv3fo"]
 [ext_resource type="PackedScene" uid="uid://t6n540cjl20p" path="res://never_ending_void.tscn" id="4_wtnv3"]
+[ext_resource type="PackedScene" uid="uid://noost2qddcmc" path="res://sky_box.tscn" id="5_r2uns"]
 
 [node name="Room" type="Node3D"]
 
@@ -37,9 +38,6 @@ transform = Transform3D(11.0255, 0, 0, 0, 0.323783, 0, 0, 0, 9.72338, -14.4598, 
 
 [node name="Player" parent="." instance=ExtResource("1_5mpl8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 11, 6)
-speed = 15.0
-jump_strength = 20.0
-fall_acceleration = 75.0
 
 [node name="Ball" parent="." instance=ExtResource("3_fv3fo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, 2)
@@ -79,3 +77,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.11945, 7.24953, 2.18763)
 
 [node name="Ball10" parent="." instance=ExtResource("3_fv3fo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.11945, 7.24953, 2.18763)
+
+[node name="SkyBox" parent="." instance=ExtResource("5_r2uns")]
+transform = Transform3D(1684.11, 0, 0, 0, -2.2385e-05, -1497.43, 0, 512.11, -6.54548e-05, -1934.89, 0, -1732.58)
