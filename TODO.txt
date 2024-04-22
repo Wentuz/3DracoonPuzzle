@@ -1,0 +1,18 @@
+Menu :
+	> New Game
+	> Continue
+	> Quit
+
+In-Game menu :
+	> Resume
+	> Save
+	> Quit
+
+Levels :
+	> One level with easy puzzles
+	> Go up for the ultimate prize ! A trash can !
+	> interacting with items
+	> climbable walls
+
+Movement :
+	> Get controls to align with the camera !
